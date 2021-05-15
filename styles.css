@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: yellow;
+    --secondary-color: red;
 }
 
 #smurfs_body {
@@ -12,13 +13,14 @@
 .smurf_header {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    padding: 2rem;
-    border: 3px solid red;
+    padding: 0.5rem;
+    border: 10px solid var(--secondary-color);
+    box-sizing: border-box;
 }
 
 .heading-smurf {
-    margin-top: 0px;
-    padding: 2rem;
+    margin: 0px;
+    padding: 1rem;
 }
 
 .container {
@@ -28,12 +30,16 @@
 }
 
 .background {
-    background-color: blue;}
+    background-color: blue;
+    background-image: url(https://smurfs.blob.core.windows.net/media/21570/logo-smurfs.png);
+    padding: 4rem 0px;
+}
 
 .smurfs_footer {
     background-color: var(--primary-color);
-    padding: 2rem;
-    border: 3px solid red;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 10px solid var(--secondary-color);
 }
 
 h2, h1 {
@@ -42,7 +48,7 @@ h2, h1 {
 }
 
 .txt_input {
-    border: 3px solid red;
+    border: 5px solid var(--secondary-color);
     width: 500px;
     height: 100px;
     border-radius: 1rem;
@@ -51,13 +57,14 @@ h2, h1 {
 }
 
 .translate_txt {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     margin: 1rem 0px;
-    background-color: yellow;
-    border: 3px solid red;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
     cursor: pointer;
     font-family: 'Pangolin', cursive;
+    font-weight: bold;
 }
 
 .txt_output {
