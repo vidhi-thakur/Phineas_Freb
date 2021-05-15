@@ -54,6 +54,7 @@ h2, h1 {
     border-radius: 1rem;
     padding: 1rem;
     font-family: 'Pangolin', cursive;
+    text-align: center;
 }
 
 .translate_txt {
