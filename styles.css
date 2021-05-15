@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 :root {
-    --primary-color: yellow;
+    --primary-color: #fddc1f;
     --secondary-color: red;
+    --third-color: #218373;
 }
 
 #smurfs_body {
@@ -30,8 +31,7 @@
 }
 
 .background {
-    background-color: blue;
-    background-image: url(https://smurfs.blob.core.windows.net/media/21570/logo-smurfs.png);
+    background-image: url(https://i.pinimg.com/originals/90/a8/58/90a8589ddfd4bcaf252cb5ce77b927bd.jpg);
     padding: 3rem 0px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 h2, h1 {
-    color: blue;
+    color: var(--third-color);
     text-align: center;
 }
 
@@ -79,4 +79,10 @@ h2, h1 {
     .background {
         padding: 2rem 0px;
     }
+}
+
+.paragraph-footer {
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
 }
