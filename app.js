@@ -2,7 +2,7 @@ var userInput = document.querySelector(".txt_input")
 var translateInput = document.querySelector(".translate_txt")
 var displayOutput = document.querySelector(".txt_output")
 
-var url = "https://api.funtranslations.com/yaml/funtranslations.yaml"
+var url = "https://api.funtranslations.com/translate/ferb-latin.json"
 
 function generateUrl(text) {
     return url+"?text="+text
@@ -14,7 +14,7 @@ function errorHandler(error) {
 
 function clickResponse(text) {
 
-    fetch(generateUrl(text)).then(response=>response.json).then(json=>{
+    fetch(generateUrl(userInput.value)).then(response=>response.json()).then(json=>{
         var translatedText = json.contents.translated
         displayOutput.innerText = translatedText
     })
