@@ -76,4 +76,7 @@ h2, h1 {
         max-width: 90%;
         margin: auto;
     }
+    .background {
+        padding: 2rem 0px;
+    }
 }
